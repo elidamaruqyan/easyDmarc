@@ -1,0 +1,12 @@
+.icon-container {
+    position: relative;
+}
+
+.icon-container__badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: var(--cycle-radius);
+    background-color: var(--warning-color);
+    color: var(--clr-ntrl-min);
+}

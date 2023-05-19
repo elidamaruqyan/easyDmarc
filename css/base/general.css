@@ -1,0 +1,150 @@
+/* GENERAL RULE */
+:root {
+
+    /*!* primary brand color - skyblue - with shades and tints via Sass functions *!*/
+    /*--clr-primary:     skyblue;*/
+    /*--clr-primary-lt:  lighten($clr-primary, 5%);*/
+    /*--clr-primary-ltr: lighten($clr-primary, 10%);*/
+    /*--clr-primary-dk:  darken($clr-primary, 5%);*/
+    /*--clr-primary-dkr: darken($clr-primary, 10%);*/
+
+    /*!* secondary brand color - hotpink - with shades and tints via Sass functions *!*/
+    /*--clr-secondary:     hotpink;*/
+    /*--clr-secondary-lt:  lighten($clr-secondary, 5%);*/
+    /*--clr-secondary-ltr: lighten($clr-secondary, 10%);*/
+    /*--clr-secondary-dk:  darken($clr-secondary, 5%);*/
+    /*--clr-secondary-dkr: darken($clr-secondary, 10%);*/
+
+
+    /*********** Color Variables *************************/
+    /* neutrals */
+    --clr-ntrl-min: rgba(255, 255, 255, 1);
+    --clr-ntrl-max: rgba(0, 0, 0, 1);
+
+    --clr-base: rgba(27, 44, 116, 1);
+    --clr-base-lt: rgba(0, 169, 224, 1);
+
+    --primary-color-dk: rgba(51, 51, 51, 1);
+    --primary-color-lt: rgba(96, 96, 96, 1);
+    --main-bg-color: rgba(242, 244, 246, 1);
+    --warning-color: rgba(230, 50, 0, 1);
+
+    /**************** Gap and Duration Variables **********************/
+    --duration: 3s;
+
+    /****************** Z-Index Variables ******************/
+    --zIndex-1: 9;
+    --zIndex-2: 99;
+    --zIndex-3: 999;
+    --zIndex-4: 9999;
+    --zIndex-5: 99999;
+
+    /************ Typography Variables ******************/
+
+    --type-micro: 0.625rem; /* 10px */
+    --type-smallest: 0.75rem; /* 12px */
+    --type-smaller: 0.875rem; /* 14px */
+    --type-small: 1rem; /* 16px */
+    --type-base: 1.25rem; /* 20px */
+    --type-large: 1.5625rem; /* 25px */
+    --type-large-responsive: 1.875rem; /* 35px */
+    --type-larger: 3.125rem; /* 50px */
+    --type-largest: 4.375rem; /* 70px */
+    --type-jumbo: 5.625; /* 90px */
+
+    --type-light: 300;
+    --type-regular: 400;
+    --type-medium: 500;
+    --type-semi-bold: 600;
+    --type-bold: 700;
+    --type-extra-bold: 900;
+
+
+    --font-family-primary: "Roboto", sans-serif;
+    --font-family-default: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    /************ Box Modeling Variables ******************/
+    --cycle-radius: 50%;
+    --base-radius: 20px;
+    --medium-radius: 10px;
+    --small-radius: 6px;
+    --btn-radius: 5px;
+    --extrasmall-radius: 3px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-size: 16px;
+    /*font-family: 'Poppins', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-bg-color);
+    line-height: 1.4;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--clr-base);
+    border-radius: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--clr-ntrl-min);
+}
+
+a {
+    color: var(--clr-base-lt);
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container-space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.uppercase-text {
+    text-transform: uppercase;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header' 'main' 'footer';
+}
+
+.content-wrapper {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
