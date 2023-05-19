@@ -39,105 +39,115 @@
 <body>
 
 <div class="grid-container">
-
     <!--================ Header Area Start =================-->
-    <header class="header-wrapper flex-container-space-between">
+    <header class="header-wrapper flex-container flex-container-space-between">
         <a href="index.html" class="header-logo-link">
             <img src="assets/images/easyDmarcLogo.svg" alt="Easy Dmarc Logo" width="198" class="header-logo">
         </a>
         <nav class="header-nav">
-            <ul class="header-list flex-container">
+            <ul class="header-list flex-container flex-container-center">
                 <li class="header-list__item">
-                    <span class="icon-container">
-                        <img src="assets/images/notification.svg"
-                             alt="Notification Icon"
-                             width="16"
-                        >
-                        <span class="icon-container__badge">2</span>
-                    </span>
-                </li>
-                <li class="header-list__item flex-container">
-                    <h3>
-                        Compliance Service
-                    </h3>
-                    <button>NEW</button>
+                    <h3>Help</h3>
                 </li>
                 <li class="header-list__item">
-                    <h3>
-                        Help
-                    </h3>
-                </li>
-                <li class="header-list__item">
-                    <span class="avatar-wrapper">AN</span>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <header class="nested-header-wrapper flex-container-space-between">
-        <div class="collapse-wrapper">
-            <img src="assets/images/collapse.png"
-                 alt="Collapse"
-                 width="">
-            <h3>Easy <span class="uppercase-text">DMARC </span></h3>
-        </div>
-        <nav class="header-nav">
-            <ul class="header-list flex-container-space-between">
-                <li class="header-list__item">
-                    Plus Plan
-                    <button>Upgrade plan</button>
-                </li>
-                <li class="header-list__item flex-container">
-                    <progress>lsd;</progress>
-                    <h3>
-                        Permitted volume usage
-                    </h3>
-                    <button>NEW</button>
+                    <h3 class="avatar-wrapper flex-container flex-container-center">AN</h3>
                 </li>
             </ul>
         </nav>
     </header>
     <!--================ Header Area End =================-->
 
-    <!--================ Left Menu Start ================-->
-    <aside class="sidebar">
-        <ul class="sidebar-list">
-            <li class="sidebar-list__item">
-                <a href="#dashboard">
-                    <img src="assets/images/dashboard.svg"
-                         alt="Dashboard"
+    <div class="main-wrapper full-height">
+        <!--================ Left Menu Start ================-->
+        <aside class="sidebar">
+            <figure class="collapse-wrapper flex-container">
+                <img class="collapse-icon"
+                     src="assets/images/platform.svg"
+                     alt="Collapse"
+                     width="">
+                <figcaption class="logo-figcaption">
+                    Easy<span class="uppercase-text">DMARC</span>
+                </figcaption>
+            </figure>
+            <ul class="sidebar-list flex-column">
+                <li class="sidebar-list__item flex-container flex-container-start sidebar-list__item--active">
+                    <a href="#" class="sidebar-list__item-text flex-container flex-container-start">
+                        <span class="icon-wrapper flex-container flex-container-center">
+                            <i class="icon icon-dashboard"></i>
+                        </span>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="sidebar-list__item flex-container flex-container-start">
+                    <a href="#" class="sidebar-list__item-text flex-container">
+                        <span class="icon-wrapper flex-container flex-container-center">
+                            <i class="icon icon-domain"></i>
+                        </span>
+                        Domains
+                    </a>
+                </li>
+                <li class="sidebar-list__item flex-container flex-container-start">
+                    <a href="#" class="sidebar-list__item-text flex-container flex-container-start">
+                        <span class="icon-wrapper flex-container flex-container-center">
+                            <i class="icon icon-dashboard"></i>
+                        </span>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="sidebar-list__item flex-container flex-container-start">
+                    <a href="#" class="sidebar-list__item-text flex-container flex-container-start">
+                        <span class="icon-wrapper flex-container flex-container-center">
+                            <i class="icon icon-dashboard"></i>
+                        </span>
+                        Dashboard
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!--================ Left Menu End ================-->
+
+        <!--================ Main Content Wrapper Start ================-->
+        <main class="content-wrapper">
+            <!--================ Nested Sub Header Start ================-->
+            <nav class="nested-header-nav flex-container">
+                <ul class="flex-container flex-container-space-between">
+                    <li>
+                        Plus Plan
+                        <button>Upgrade plan</button>
+                    </li>
+                </ul>
+            </nav>
+            <!--================ Nested Header End ================-->
+
+            <div class="sections-wrapper">
+                <section class="content-wrapper__title">
+                    <img src="assets/images/easySpf.png"
+                         alt="EasySpf"
                          width=""
                     >
-                    Dashboard
-                </a>
-            </li>
-        </ul>
-    </aside>
-    <!--================ Left Menu End ================-->
-    <main class="content-wrapper">
-        <div class="content-wrapper__title">
-            <img src="assets/images/easySpf.png"
-                 alt="EasySpf"
-                 width=""
-            >
-            <h1>EasySPF</h1>
-        </div>
-        <!--================ Section Filter Start ================-->
-        <section class="filter">
-            dropdown
-        </section>
-        <!--================ Section  Filter End ================-->
+                    <h1>EasySPF</h1>
+                </section>
+                <!--================ Section Filter Start ================-->
+                <section class="filter">
+                    dropdown
+                </section>
+                <!--================ Section  Filter End ================-->
 
-        <!--================ Section Services Plan Start================-->
-        <section class="services-wrapper">
-            <div>
-                first plan
+                <!--================ Section Services Plan Start================-->
+                <section class="services-wrapper">
+                    <div>
+                        first plan
+                    </div>
+                    <div>
+                        second plan
+                    </div>
+                </section>
+                <!--================ Section Services Plan End================-->
             </div>
-            <div>
-                second plan
-            </div>
-        </section>
-        <!--================ Section Services Plan End================-->
-    </main>
+        </main>
+        <!--================ Main Content Wrapper End ================-->
+    </div>
+
     <!--Font Awesome kit's -->
     <script src="https://kit.fontawesome.com/a961982f40.js" crossorigin="anonymous"></script>
 </div>

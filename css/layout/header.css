@@ -1,25 +1,40 @@
+/*********** Main Header Styles Start *************************/
 .header-wrapper {
-    height: 48px;
-    padding: 0 32px 0 12px;
+    height: 3rem;
+    padding: 0 2rem 0 0.75rem;
     background-color: var(--clr-base);
     color: var(--clr-ntrl-min);
 }
 
 .header-list {
-    grid-gap: 16px;
+    grid-gap: 1rem;
 }
 
 .header-list__item {
     position: relative;
-    padding-left: 16px;
+    padding-left: 1rem;
 }
 
 .header-list__item::before {
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 0;
+    transform: translate(0, -50%);
     content: '';
-    width: 1px;
-    height: 100%;
-    background-color: red;
+    width: 0.063rem;
+    height: 1rem;
+    background-color: var(--divider-color);
+}
+
+.header-list__item:first-child::before {
+    display: none;
+}
+
+.avatar-wrapper {
+    width: 2rem;
+    height: 2rem;
+    border-radius: var(--cycle-radius);
+    font: normal var(--type-regular) var(--type-smallest) var(--font-family-default);
+    background-color: var(--clr-base-lt);
+    color: var(--clr-ntrl-min);
 }

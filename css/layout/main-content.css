@@ -1,0 +1,17 @@
+.main-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.nested-header-nav {
+    height: 4rem;
+    padding: 0 1.5rem 0 0.75rem;
+    background-color: var(--clr-ntrl-min);
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.sections-wrapper {
+    height: inherit;
+    padding: 1.5rem 2rem 3.5rem;
+}

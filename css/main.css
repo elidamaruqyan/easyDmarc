@@ -1,4 +1,5 @@
 @import "base/general.css";
+@import "component/icons.css";
 @import "component/form.css";
 @import "component/badge.css";
 @import "component/button.css";
@@ -7,7 +8,7 @@
 @import "component/card.css";
 @import "layout/header.css";
 @import "layout/sidebar.css";
-/*@import "layout/navbar.css";*/
+@import "layout/main-content.css";
 @import "layout/footer.css";
 
 
