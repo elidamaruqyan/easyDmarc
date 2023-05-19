@@ -102,11 +102,6 @@ img {
     height: 100%;
 }
 
-.grid-container {
-    height: 100vh;
-    overflow: hidden;
-}
-
 .flex-container {
     display: flex;
     align-items: center;
