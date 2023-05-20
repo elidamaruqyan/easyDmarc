@@ -1,6 +1,6 @@
 # HTML/CSS
 
-A small project which is going to use following tech stack:
+A small project that uses the following technology stack:
 
 - HTML
   - [Semantic tags](https://www.w3schools.com/html/html5_semantic_elements.asp) (header, nav, main, figure)
