@@ -1,7 +1,6 @@
 .sidebar {
     height: inherit;
     width: 15rem;
-    background-color: var(--clr-ntrl-min);
 }
 
 /* Sidebar Collapse Styles */

@@ -26,14 +26,34 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-dashboard:before {
+.icon-email-senders:before {
     content: "\e900";
 }
 
-.icon-domain:before {
+.icon-multi-lookup:before {
     content: "\e901";
 }
 
-.icon-platform:before {
+.icon-dashboard:before {
     content: "\e902";
+}
+
+.icon-domain:before {
+    content: "\e903";
+}
+
+.icon-platform:before {
+    content: "\e904";
+}
+
+.icon-check:before {
+    content: "\e905";
+}
+
+.icon-crown:before {
+    content: "\e906";
+}
+
+.icon-check-circle:before {
+    content: "\e907";
 }
