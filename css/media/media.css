@@ -1,0 +1,14 @@
+@media screen  and (max-width: 768px) {
+    .collapse {
+        width: 52px;
+        overflow: hidden;
+    }
+
+    .sidebar-list__item-text {
+        opacity: 0;
+    }
+
+    .card-wrapper__item--light {
+        background-color: transparent;
+    }
+}

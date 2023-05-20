@@ -60,49 +60,59 @@
 </header>
 <!--================ Header Area End =================-->
 
+<!--================ Nested Sub Header Start ================-->
+<nav class="nested-header-nav flex-container bg-white">
+    <figure class="collapse-wrapper flex-container">
+        <img class="collapse-icon"
+             src="assets/images/platform.svg"
+             alt="Collapse"
+             width="">
+        <figcaption class="logo-figcaption">
+            Easy<span class="uppercase-text">DMARC</span>
+        </figcaption>
+    </figure>
+    <ul class="nav-list flex-container flex-container-space-between">
+        <li class="nav-list__item flex-container flex-container-center">
+            Plus Plan
+            <button class="btn btn--upgrade">Upgrade plan</button>
+        </li>
+    </ul>
+</nav>
+<!--================ Nested Sub Header End ================-->
 <!--================ Main Container Area Start =================-->
-<div class="main-wrapper full-height">
+<div class="main-wrapper">
     <!--================ Left Menu Start ================-->
-    <aside class="sidebar bg-white">
-        <figure class="collapse-wrapper flex-container">
-            <img class="collapse-icon"
-                 src="assets/images/platform.svg"
-                 alt="Collapse"
-                 width="">
-            <figcaption class="logo-figcaption">
-                Easy<span class="uppercase-text">DMARC</span>
-            </figcaption>
-        </figure>
+    <aside class="sidebar bg-white collapse">
         <ul class="sidebar-list flex-column">
             <li class="sidebar-list__item flex-container flex-container-start">
-                <a href="#" class="sidebar-list__item-text flex-container flex-container-start">
-                        <span class="icon-wrapper flex-container flex-container-center">
-                            <i class="icon icon-dashboard"></i>
-                        </span>
+                <span class="icon-wrapper flex-container flex-container-center">
+                    <i class="icon icon-dashboard"></i>
+                </span>
+                <a href="#" class="sidebar-list__item-text">
                     Dashboard
                 </a>
             </li>
             <li class="sidebar-list__item flex-container flex-container-start">
-                <a href="#" class="sidebar-list__item-text flex-container">
-                        <span class="icon-wrapper flex-container flex-container-center">
-                            <i class="icon icon-domain"></i>
-                        </span>
+                 <span class="icon-wrapper flex-container flex-container-center">
+                    <i class="icon icon-domain"></i>
+                </span>
+                <a href="#" class="sidebar-list__item-text">
                     Domains
                 </a>
             </li>
             <li class="sidebar-list__item flex-container flex-container-start sidebar-list__item--active">
-                <a href="#" class="sidebar-list__item-text flex-container flex-container-start">
-                        <span class="icon-wrapper flex-container flex-container-center">
-                            <i class="icon icon-multi-lookup"></i>
-                        </span>
+                <span class="icon-wrapper flex-container flex-container-center">
+                    <i class="icon icon-multi-lookup"></i>
+                </span>
+                <a href="#" class="sidebar-list__item-text">
                     EasySPF
                 </a>
             </li>
             <li class="sidebar-list__item flex-container flex-container-start">
-                <a href="#" class="sidebar-list__item-text flex-container flex-container-start">
-                        <span class="icon-wrapper flex-container flex-container-center">
-                            <i class="icon icon-dashboard"></i>
-                        </span>
+                <span class="icon-wrapper flex-container flex-container-center">
+                    <i class="icon icon-dashboard"></i>
+                </span>
+                <a href="#" class="sidebar-list__item-text">
                     Dashboard
                 </a>
             </li>
@@ -111,134 +121,160 @@
     <!--================ Left Menu End ================-->
 
     <!--================ Main Content Wrapper Start ================-->
-    <main class="content-wrapper">
-        <!--================ Nested Sub Header Start ================-->
-        <nav class="nested-header-nav flex-container bg-white">
-            <ul class="nav-list flex-container flex-container-space-between">
-                <li class="nav-list__item flex-container flex-container-center">
-                    Plus Plan
-                    <button class="btn btn--upgrade">Upgrade plan</button>
-                </li>
-            </ul>
-        </nav>
-        <!--================ Nested Sub Header End ================-->
-
-        <div class="sections-wrapper">
-            <section class="sections-wrapper__title flex-container flex-container-start">
+    <main class="sections-wrapper">
+        <section class="sections-wrapper__title flex-container flex-container-start">
                <span class="icon-wrapper flex-container flex-container-center">
                     <i class="icon icon-email-senders"></i>
                 </span>
-                <h1 class="page-title">EasySPF</h1>
-            </section>
-            <!--================ Section Filter Start ================-->
-            <section class="filter-wrapper bg-white">
-                <!--It should be changed to the custom dropdown -->
-                <label for="domain">
-                    <select name="domain" id="domain" class="select-wrapper">
-                        <option value="easySpf">easySpf.com</option>
-                        <option value="easySpf">easySpf.com</option>
-                        <option value="easySpf">easySpf.com</option>
-                        <option value="easySpf">easySpf.com</option>
-                    </select>
-                </label>
-            </section>
-            <!--================ Section  Filter End ================-->
+            <h1 class="page-title">EasySPF</h1>
+        </section>
+        <!--================ Section Filter Start ================-->
+        <section class="filter-wrapper bg-white">
+            <!--It should be changed to the custom dropdown -->
+            <label for="domain">
+                <select name="domain" id="domain" class="select-wrapper">
+                    <option value="easySpf">easySpf.com</option>
+                    <option value="easySpf">easySpf.com</option>
+                    <option value="easySpf">easySpf.com</option>
+                    <option value="easySpf">easySpf.com</option>
+                </select>
+            </label>
+        </section>
+        <!--================ Section  Filter End ================-->
 
-            <!--================ Section Pricing Plan Start================-->
-            <section class="card-wrapper">
-                <div class="card-wrapper__item">
-                    <h3 class="card-wrapper__item--title text-center">
-                        EasySPF trial has expired
-                    </h3>
-                    <p class="card-wrapper__item--description text-center">
-                        Thank you for using EasySPF. Your trial has now ended. We’ll continue to support your domain SPF
-                        record, but access to record management has been restricted.
-                    </p>
-                    <div class="partners">
-                        <h3 class="partners--title text-center">SPF Parts</h3>
-                        <ul class="partners-list flex-container flex-container-center">
-                            <li class="partners-list__item bg-white">
-                                <img src="./assets/images/partner-logo.svg"
-                                     alt="Partner Logo"
-                                     width="34"
-                                >
-                            </li>
-                            <li class="partners-list__item bg-white">
-                                <img src="./assets/images/gmail.svg"
-                                     alt="Partner Logo"
-                                     width="34"
-                                >
-                            </li>
-                            <li class="partners-list__item bg-white">
-                                <img src="./assets/images/gmail.svg"
-                                     alt="Partner Logo"
-                                     width="34"
-                                >
-                            </li>
-                            <li class="partners-list__item bg-white">
-                                <img src="./assets/images/gmail.svg"
-                                     alt="Partner Logo"
-                                     width="34"
-                                >
-                            </li>
-                            <li class="partners-list__item">
-                                +3
-                            </li>
-                        </ul>
-                        <a href="#getValues" class="link-item flex-container flex-container-center text-center">
-                            Get my SPF record value
-                        </a>
+        <!--================ Section Pricing Plan Start================-->
+        <section class="card-wrapper">
+            <div class="card-wrapper__item">
+                <h3 class="card-wrapper__item--title text-center">
+                    EasySPF trial has expired
+                </h3>
+                <p class="card-wrapper__item--description text-center">
+                    Thank you for using EasySPF. Your trial has now ended. We’ll continue to support your domain SPF
+                    record, but access to record management has been restricted.
+                </p>
+                <div class="partners">
+                    <h3 class="partners--title text-center">SPF Parts</h3>
+                    <ul class="partners-list flex-container flex-container-center">
+                        <li class="partners-list__item bg-white">
+                            <img src="./assets/images/partner-logo.svg"
+                                 alt="Partner Logo"
+                                 width="34"
+                            >
+                        </li>
+                        <li class="partners-list__item bg-white">
+                            <img src="./assets/images/gmail.svg"
+                                 alt="Partner Logo"
+                                 width="34"
+                            >
+                        </li>
+                        <li class="partners-list__item bg-white">
+                            <img src="./assets/images/gmail.svg"
+                                 alt="Partner Logo"
+                                 width="34"
+                            >
+                        </li>
+                        <li class="partners-list__item bg-white">
+                            <img src="./assets/images/gmail.svg"
+                                 alt="Partner Logo"
+                                 width="34"
+                            >
+                        </li>
+                        <li class="partners-list__item">
+                            +3
+                        </li>
+                    </ul>
+                    <a href="#getValues" class="link-item flex-container flex-container-center text-center">
+                        Get my SPF record value
+                    </a>
+                </div>
+                <div class="lookups-list flex-container flex-container-center flex-wrap">
+                    <div class="lookups-list__item bg-white">
+                        <h3 class="lookups-list__item--title mb-8">Lookups without EasySPF</h3>
+                        <p class="lookups-list__item--info danger-color">25 out of 10</p>
                     </div>
-                    <div class="lookups-list flex-container flex-container-center flex-wrap">
-                        <div class="lookups-list__item bg-white">
-                            <h3 class="lookups-list__item--title">Lookups without EasySPF</h3>
-                            <p class="lookups-list__item--info danger-color">25 out of 10</p>
-                        </div>
-                        <div class="lookups-list__item bg-white">
-                            <h3 class="lookups-list__item--title">Lookups with EasySPF</h3>
-                            <p class="lookups-list__item--info success-color">3 out of 10</p>
-                        </div>
+                    <div class="lookups-list__item bg-white">
+                        <h3 class="lookups-list__item--title mb-8">Lookups with EasySPF</h3>
+                        <p class="lookups-list__item--info success-color">3 out of 10</p>
                     </div>
-                    <button class="btn-light bg-white flex-container flex-container-center">
+                </div>
+                <button class="btn-light mb-8 bg-white flex-container flex-container-center">
                          <span class="icon-wrapper flex-container flex-container-center">
                             <i class="icon icon-crown"></i>
                         </span>
-                        Premium Plan Feature
-                    </button>
-                    <div class="benefits">
-                        <h2 class="benefits--title text-center">EasySPF benefits</h2>
-                        <ul class="benefit-list">
-                            <li class="benefit-list__item flex-container flex-container-start">
-                                <p>Add the SPF record on DNS once</p>
+                    Premium Plan Feature
+                </button>
+                <div class="benefits">
+                    <h2 class="benefits--title text-center">EasySPF benefits</h2>
+                    <ul class="card-list">
+                        <li class="card-list__item flex-container flex-container-start">
+                            <p>Add the SPF record on DNS once</p>
+                        </li>
+                        <li class="card-list__item flex-container flex-container-start">
+                            <p>Manage from a centralized interface</p>
+                        </li>
+                        <li class="card-list__item flex-container flex-container-start">
+                            <p>Solve 10 DNS lookup limitations</p>
+                        </li>
+                        <li class="card-list__item flex-container flex-container-start">
+                            <p>Optimize the record without syntax knowledge</p>
+                        </li>
+                        <li class="card-list__item flex-container flex-container-start">
+                            <p>Avoid the risk of configuration errors</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-wrapper__item card-wrapper__item--light">
+                <h3 class="card-wrapper__item--title card-wrapper__item--title--bold text-center">Upgrade to
+                    <span class="key-word"> Premium </span> to Enable
+                    Alert Management Feature</h3>
+                <div class="switcher-wrapper flex-container flex-container-center">
+                    <span class="switcher-wrapper__badge flex-container flex-container-center">Save up to 10%</span>
+                    <button class="switcher-wrapper__btn switcher-wrapper__btn--active">Monthly</button>
+                    <button class="switcher-wrapper__btn"> Annual</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="nested-wrapper">
+                        <h2 class="pricing-card__title text-center mb-8"> Premium </h2>
+                        <h5 class="pricing-card__sub-info text-center mb-8">For startups</h5>
+                        <h2 class="pricing-card__title pricing-card__title--big text-center mb-8">$35.99</h2>
+                        <p class="pricing-card__sub-info pricing-card__sub-info--small text-center">
+                            Per month / Billed annually
+                        </p>
+                        <ul class="card-list card-list--large-gap">
+                            <li class="card-list__item card-list__item--different flex-container flex-container-start">
+                                <p>100M Emails</p>
                             </li>
-                            <li class="benefit-list__item flex-container flex-container-start">
-                                <p>Manage from a centralized interface</p>
+                            <li class="card-list__item card-list__item--different flex-container flex-container-start">
+                                <p>2 Domains</p>
                             </li>
-                            <li class="benefit-list__item flex-container flex-container-start">
-                                <p>Solve 10 DNS lookup limitations</p>
+                            <li class="card-list__item card-list__item--different flex-container flex-container-start">
+                                <p>3 Month Data History</p>
                             </li>
-                            <li class="benefit-list__item flex-container flex-container-start">
-                                <p>Optimize the record without syntax knowledge</p>
+                            <li class="card-list__item card-list__item--different flex-container flex-container-start">
+                                <p>1 User</p>
                             </li>
-                            <li class="benefit-list__item flex-container flex-container-start">
-                                <p>Avoid the risk of configuration errors</p>
+                            <li class="card-list__item card-list__item--different flex-container flex-container-start">
+                                <p>EasySPF</p>
+                            </li>
+                            <li class="card-list__item card-list__item--different flex-container flex-container-start">
+                                <p>Failure Report</p>
+                            </li>
+                            <li class="card-list__item card-list__item--different flex-container flex-container-start">
+                                <p>Aggregate Geomaps</p>
                             </li>
                         </ul>
+                        <button class="btn btn-apply">
+                            Upgrade to Premium
+                        </button>
                     </div>
                 </div>
-                <div class="card-wrapper__item card-wrapper__item--light">
-                    <h3 class="card-wrapper__item--title card-wrapper__item--title--bold text-center">Upgrade to
-                        <span class="key-word"> Premium </span> to Enable
-                        Alert Management Feature</h3>
-                    <div class="switcher-wrapper">
-                        <span class="info-label">Save up to 10%</span>
-                        <button class="switcher-wrapper__btn switcher-wrapper__btn--active">Monthly</button>
-                        <button class="switcher-wrapper__btn"> Annual</button>
-                    </div>
-                </div>
-            </section>
-            <!--================ Section Pricing Plan End================-->
-        </div>
+                <a href="#getValues" class="link-item flex-container flex-container-center text-center">
+                    Check all plans
+                </a>
+            </div>
+        </section>
+        <!--================ Section Pricing Plan End================-->
     </main>
     <!--================ Main Content Wrapper End ================-->
 </div>

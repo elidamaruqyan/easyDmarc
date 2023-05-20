@@ -1,20 +1,25 @@
 .btn {
     height: 2.5rem;
     padding: 0.75rem 1rem;
-    color: var(--clr-ntrl-min);
-    font: var(--generic-font-styles);
     border-radius: var(--btn-radius);
     border: 0;
+    color: var(--clr-ntrl-min);
+    font: var(--generic-font-styles);
+    white-space: nowrap;
 }
 
 .btn--upgrade {
     background-color: var(--succes-color);
 }
 
+.btn-apply {
+    background-color: var(--clr-base-lt);
+    width: 100%;
+}
+
 .btn-light {
     height: 2.125rem;
     padding: 0.5rem 0.75rem;
-    margin-bottom: 0.5rem;
     grid-gap: 0.5rem;
     border-radius: var(--base-radius);
     border: 0;
@@ -25,4 +30,28 @@
 
 .btn-light i {
     color: rgba(251, 176, 59, 1);
+}
+
+.switcher-wrapper {
+    position: relative;
+    grid-gap: 0.25rem;
+    padding: 0.25rem;
+    margin-bottom: 2.5rem;
+    border-radius: var(--medium-radius);
+    background-color: var(--active-bg-item);
+}
+
+.switcher-wrapper__btn {
+    min-width: 7.5rem;
+    height: 2rem;
+    border-radius: var(--small-radius);
+    border: 0;
+    font: var(--generic-font-styles);
+    font-weight: var(--type-medium);
+    background-color: unset;
+}
+
+.switcher-wrapper__btn--active {
+    background-color: var(--clr-ntrl-min);
+    color: var(--clr-base-lt);
 }

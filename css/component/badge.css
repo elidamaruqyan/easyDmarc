@@ -10,3 +10,15 @@
     background-color: var(--warning-color);
     color: var(--clr-ntrl-min);
 }
+
+.switcher-wrapper__badge {
+    position: absolute;
+    top: -14px;
+    right: 10px;
+    height: 1.25rem;
+    padding: 2.5px 0.5rem;
+    border-radius: 0.125rem;
+    font: normal var(--type-medium) 0.625rem var(--font-family-primary);
+    background-color: var(--succes-color);
+    color: var(--clr-ntrl-min);
+}

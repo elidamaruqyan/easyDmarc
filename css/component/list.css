@@ -1,0 +1,33 @@
+.card-list--large-gap {
+    margin: 2rem 0;
+}
+
+.card-list__item {
+    position: relative;
+    height: 1.313rem;
+    padding-left: 1.5rem;
+    margin-bottom: 0.313rem;
+    font: var(--generic-font-styles);
+    color: var(--primary-color-dk);
+    text-align: left;
+}
+
+.card-list__item::before {
+    font-family: 'icomoon';
+    content: "\e907";
+    position: absolute;
+    left: 0;
+    color: var(--succes-color);
+}
+
+.card-list__item--different {
+    margin-bottom: 0.438rem;
+    color: var(--icon-and-text-color);
+    font-size: var(--type-small);
+}
+
+.card-list__item--different::before {
+    content: "\e905";
+    font-size: 1.5rem;
+    color: var(--clr-base-lt);
+}
